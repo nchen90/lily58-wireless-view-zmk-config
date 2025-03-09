@@ -30,19 +30,25 @@
             bindings = <&kp LC(V)>;
             label = "PASTE";
         };
+    };
 
-        space_2: space_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &mo 2>;
-            label = "SPACE_1";
+    behaviors {
+        space_2: space_2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <0>;
         };
 
-        enter_1: enter_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER &mo 1>;
-            label = "ENTER_2";
+        enter_1: enter_1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ENTER_1";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <0>;
         };
     };
 
@@ -63,7 +69,7 @@
 &kp TAB             &kp Q   &kp W   &kp E     &kp R   &kp T                                                  &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
 &mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D     &kp F   &kp G                                                  &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT           &kp Z   &kp X   &kp C     &kp V   &kp B           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                    &kp LALT  &copy   &Special_Paste  &enter_1            &space_2           &kp BACKSPACE  &kp ENTER  &kp RGUI
+                                    &kp LALT  &copy   &Special_Paste  &enter_1 1 ENTER    &space_2 2 SPACE   &kp BACKSPACE  &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
