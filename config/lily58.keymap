@@ -40,6 +40,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <1>;
+            flavor = "balanced";
         };
 
         enter_1: enter_1 {
@@ -49,6 +50,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <1>;
+            flavor = "balanced";
         };
     };
 
@@ -65,11 +67,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC             &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                 &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB             &kp Q   &kp W   &kp E     &kp R   &kp T                                                  &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D     &kp F   &kp G                                                  &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT           &kp Z   &kp X   &kp C     &kp V   &kp B           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                    &kp LALT  &copy   &Special_Paste  &enter_1 1 ENTER    &space_2 2 SPACE   &kp BACKSPACE  &kp ENTER  &kp RGUI
+&kp ESC             &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB             &kp Q   &kp W   &kp E     &kp R   &kp T                                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D     &kp F   &kp G                                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT           &kp Z   &kp X   &kp C     &kp V   &kp B           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                    &kp LALT  &copy   &Special_Paste  &enter_1 1 KP_ENTER    &space_2 2 SPACE   &kp BACKSPACE  &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
