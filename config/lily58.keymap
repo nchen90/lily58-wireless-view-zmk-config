@@ -8,10 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    bindings = <&mo>, <&kp>;
-};
-
 / {
     macros {
         copy: copy {
@@ -33,6 +29,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
             label = "PASTE";
+        };
+
+        Lock: Lock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_8 &kp NUMBER_9>;
+            label = "LOCK";
         };
     };
 
@@ -71,11 +74,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC             &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                    &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB             &kp Q   &kp W   &kp E     &kp R   &kp T                                                     &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D     &kp F   &kp G                                                     &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT           &kp Z   &kp X   &kp C     &kp V   &kp B           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                    &kp LALT  &copy   &Special_Paste  &enter_1 1 KP_ENTER    &space_2 2 SPACE   &kp BACKSPACE  &kp ENTER  &kp RGUI
+&kp ESC             &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                 &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB             &kp Q   &kp W   &kp E     &kp R   &kp T                                                  &kp Y          &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&mt LCTRL CAPSLOCK  &kp A   &kp S   &kp D     &kp F   &kp G                                                  &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT           &kp Z   &kp X   &kp C     &kp V   &kp B           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                    &kp LALT  &copy   &Special_Paste  &lt 1 KP_ENTER      &lt 2 SPACE        &kp BACKSPACE  &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -111,7 +114,7 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &trans     &trans
+&trans     &trans  &trans  &trans   &trans   &trans                     &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &trans     &Lock
 &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7             &kp N8           &kp N9    &kp N0     &kp PIPE
 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT           &kp DOWN         &kp UP    &kp RIGHT  &trans
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS          &kp EQUAL        &kp LBKT  &kp RBKT   &kp BSLH
