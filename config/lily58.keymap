@@ -97,7 +97,7 @@
 &kp F1  &kp F2    &kp F3         &kp F4       &kp F5     &kp F6                               &kp F7         &kp F8     &kp F9       &kp F10           &kp F11            &kp F12
 &trans  &kp F2    &kp HOME       &kp UP       &kp END    &kp PAGE_UP                          &kp PAGE_UP    &kp HOME   &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
 &trans  &kp EXCL  &kp LEFT       &kp DOWN     &kp RIGHT  &kp PAGE_DOWN                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN     &kp RIGHT_ARROW   &trans             &kp TILDE
-&trans  &trans    &kp PAGE_DOWN  &kp PAGE_UP  &Paste     &Paste         &bt BT_CLR    &trans  &trans         &kp MINUS  &kp KP_PLUS  &trans            &trans             &trans
+&trans  &trans    &kp PAGE_DOWN  &kp PAGE_UP  &Paste     &Paste         &bt BT_CLR    &trans  &trans         &kp MINUS  &kp KP_PLUS  &trans            &kp BACKSLASH      &trans
                                  &trans       &trans     &trans         &trans        &trans  &trans         &trans     &trans
             >;
 
