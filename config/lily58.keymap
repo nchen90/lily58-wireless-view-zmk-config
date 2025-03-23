@@ -37,6 +37,14 @@
             bindings = <&kp NUMBER_0 &kp NUMBER_5 &kp NUMBER_8 &kp NUMBER_9>;
             label = "LOCK";
         };
+
+        SoundOption: SoundOption {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp LC(V)>, <&macro_press>;
+
+            label = "SOUNDOPTION";
+        };
     };
 
     behaviors {
@@ -74,11 +82,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                            &kp N6         &kp N7   &kp N8               &kp N9   &kp N0    &kp GRAVE
-&kp TAB         &kp Q   &kp W   &kp E     &kp R   &kp T                                             &kp Y          &kp U    &kp I                &kp O    &kp P     &kp MINUS
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F   &kp G                                             &kp H          &kp J    &kp K                &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z   &kp X   &kp C     &kp V   &kp B           &Paste         &kp RIGHT_BRACKET  &kp N          &kp M    &kp COMMA            &kp DOT  &kp FSLH  &mt RSHFT PIPE
-                                &kp LALT  &copy   &Special_Paste  &lt 1 ENTER    &lt 2 SPACE        &kp BACKSPACE  &kp DEL  &mt RCTRL RIGHT_GUI
+&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                               &kp N6         &kp N7   &kp N8               &kp N9   &kp N0    &kp GRAVE
+&kp TAB         &kp Q   &kp W   &kp E     &kp R   &kp T                                                                &kp Y          &kp U    &kp I                &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F   &kp G                                                                &kp H          &kp J    &kp K                &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z   &kp X   &kp C     &kp V   &kp B           &Paste         &kt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp N          &kp M    &kp COMMA            &kp DOT  &kp FSLH  &mt RSHFT PIPE
+                                &kp LALT  &copy   &Special_Paste  &lt 1 ENTER    &lt 2 SPACE                           &kp BACKSPACE  &kp DEL  &mt RCTRL RIGHT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -114,10 +122,10 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans    &Lock
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp PG_UP      &kp HOME           &kp UP           &kp END    &kp N0    &kp PIPE
-&kp CAPS   &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp PAGE_DOWN  &kp LEFT           &kp DOWN         &kp RIGHT  &trans    &trans
-&trans     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS    &kp MINUS          &kp EQUAL        &kp LBKT   &kp RBKT  &kp BSLH
+&trans     &trans  &trans  &trans   &trans   &trans                     &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &SoundOption  &trans    &Lock
+&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp PG_UP      &kp HOME           &kp UP           &kp END       &kp N0    &kp PIPE
+&kp CAPS   &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp PAGE_DOWN  &kp LEFT           &kp DOWN         &kp RIGHT     &trans    &trans
+&trans     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS    &kp MINUS          &kp EQUAL        &kp LBKT      &kp RBKT  &kp BSLH
                            &trans   &trans   &trans   &trans    &trans  &trans         &trans             &trans
             >;
 
