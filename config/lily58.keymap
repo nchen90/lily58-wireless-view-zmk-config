@@ -41,8 +41,7 @@
         SoundOption: SoundOption {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp LC(V)>, <&macro_press>;
-
+            bindings = <&kp LEFT_WIN &kp LCTRL &kp V>;
             label = "SOUNDOPTION";
         };
     };
