@@ -137,11 +137,11 @@
 
         layer_3 {
             bindings = <
-&to 0   &trans  &trans          &trans          &trans           &trans                    &trans  &trans          &trans           &trans     &trans  &trans
-&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                    &trans  &msc SCRL_UP    &msc SCRL_DOWN   &trans     &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &mkp LCLK       &mkp RCLK        &mkp MCLK  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans     &trans  &trans
-                                &trans          &trans           &trans  &none     &trans  &trans  &trans          &trans
+&to 0   &trans  &trans          &trans          &trans           &trans                    &kp HOME       &trans          &trans           &trans     &trans  &trans
+&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                    &kp PAGE_UP    &msc SCRL_UP    &msc SCRL_DOWN   &trans     &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &kp PAGE_DOWN  &mkp LCLK       &mkp RCLK        &mkp MCLK  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &kp END        &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans     &trans  &trans
+                                &trans          &trans           &trans  &none     &trans  &trans         &trans          &trans
             >;
         };
 
