@@ -102,11 +102,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp F1    &kp F2    &kp F3         &kp F4       &kp F5     &kp F6                                &kp F7         &kp F8     &kp F9       &kp F10           &kp F11            &kp F12
-&tog 0    &tog 1    &tog 2         &tog 3       &to 4      &kp PAGE_UP                           &kp PAGE_UP    &kp HOME   &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
-&kp CAPS  &kp EXCL  &kp LEFT       &kp DOWN     &kp RIGHT  &kp PAGE_DOWN                         &kp PAGE_DOWN  &kp LEFT   &kp DOWN     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
-&trans    &trans    &kp PAGE_DOWN  &kp PAGE_UP  &Paste     &Paste         &bt BT_CLR     &trans  &trans         &kp MINUS  &kp KP_PLUS  &kp EQUAL         &kp BACKSLASH      &trans
-                                   &trans       &trans     &trans         &lt 1 ENTER    &trans  &trans         &trans     &trans
+&kp F1    &kp F2    &kp F3         &kp F4       &kp F5     &kp F6                               &kp F7         &kp F8     &kp F9       &kp F10           &kp F11            &kp F12
+&tog 0    &tog 1    &tog 2         &tog 3       &to 4      &kp PAGE_UP                          &kp PAGE_UP    &kp HOME   &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
+&kp CAPS  &kp EXCL  &kp LEFT       &kp DOWN     &kp RIGHT  &kp PAGE_DOWN                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
+&trans    &trans    &kp PAGE_DOWN  &kp PAGE_UP  &Paste     &Paste         &bt BT_CLR    &trans  &trans         &kp MINUS  &kp KP_PLUS  &kp EQUAL         &kp BACKSLASH      &trans
+                                   &trans       &trans     &trans         &none         &trans  &trans         &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -122,11 +122,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                          &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &SoundOption  &trans    &Lock
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                          &kp PG_UP      &kp HOME           &kp UP           &kp END       &kp N0    &kp PIPE
-&trans     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                          &kp PAGE_DOWN  &kp LEFT           &kp DOWN         &kp RIGHT     &trans    &trans
-&trans     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans         &trans  &kp KP_PLUS    &kp MINUS          &kp EQUAL        &kp LBKT      &kp RBKT  &kp BSLH
-                           &trans   &trans   &trans   &lt 1 ENTER    &trans  &trans         &trans             &trans
+&trans     &trans  &trans  &trans   &trans   &trans                     &kp C_MUTE     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &SoundOption  &trans    &Lock
+&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp PG_UP      &kp HOME           &kp UP           &kp END       &kp N0    &kp PIPE
+&trans     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp PAGE_DOWN  &kp LEFT           &kp DOWN         &kp RIGHT     &trans    &trans
+&trans     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS    &kp MINUS          &kp EQUAL        &kp LBKT      &kp RBKT  &kp BSLH
+                           &trans   &trans   &trans   &none     &trans  &trans         &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -134,11 +134,11 @@
 
         layer_3 {
             bindings = <
-&to 0   &trans  &trans          &trans          &trans           &trans                         &trans  &trans          &trans           &trans     &trans  &trans
-&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                         &trans  &msc SCRL_UP    &msc SCRL_DOWN   &trans     &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                         &trans  &mkp LCLK       &mkp RCLK        &mkp MCLK  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans         &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans     &trans  &trans
-                                &trans          &trans           &trans  &lt 1 ENTER    &trans  &trans  &trans          &trans
+&to 0   &trans  &trans          &trans          &trans           &trans                    &trans  &trans          &trans           &trans     &trans  &trans
+&trans  &trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &trans                    &trans  &msc SCRL_UP    &msc SCRL_DOWN   &trans     &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &mkp LCLK       &mkp RCLK        &mkp MCLK  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans     &trans  &trans
+                                &trans          &trans           &trans  &none     &trans  &trans  &trans          &trans
             >;
         };
 
