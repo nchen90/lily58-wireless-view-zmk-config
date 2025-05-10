@@ -52,7 +52,7 @@
         Work: Work {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp LCTRL &kp LEFT>, <&macro_press>;
+            bindings = <&kp LWIN &kp LCTRL>, <&macro_press>, <&kp RIGHT>;
 
             label = "WORK";
         };
@@ -60,7 +60,7 @@
         Home: Home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp LCTRL &kp RIGHT>, <&macro_press>;
+            bindings = <&kp LWIN &kp LCTRL>, <&macro_press>, <&kp LEFT_ARROW>;
 
             label = "HOME";
         };
