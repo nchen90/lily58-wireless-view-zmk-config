@@ -52,14 +52,14 @@
         Work: Work {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT>;
+            bindings = <&kp LWIN &kp LCTRL &kp LEFT>;
             label = "WORK";
         };
 
         Home: Home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>;
+            bindings = <&kp LWIN &kp LCTRL &kp RIGHT>;
             label = "HOME";
         };
     };
