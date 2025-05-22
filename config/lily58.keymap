@@ -50,7 +50,7 @@
                 <&kp LEFT_WIN &kp LCTRL>,
                 <&macro_tap>,
                 <&kp V>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_WIN &kp LCTRL>;
 
             label = "SOUNDOPTION";
@@ -63,7 +63,7 @@
                 <&macro_press>,
                 <&kp LWIN &kp LCTRL>,
                 <&macro_tap>,
-                <&kp RIGHT>,
+                <&kp LEFT>,
                 <&macro_release>,
                 <&kp LEFT_WIN &kp LCTRL>;
 
