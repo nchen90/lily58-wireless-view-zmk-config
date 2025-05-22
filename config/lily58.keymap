@@ -45,7 +45,14 @@
         SoundOption: SoundOption {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp LCTRL &kp V>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_press>,
+                <&kp LEFT_WIN &kp LCTRL>;
+
             label = "SOUNDOPTION";
         };
 
@@ -53,12 +60,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LWIN &kp LCTRL>,
                 <&macro_press>,
-                <&kp RIGHT>,
+                <&kp LWIN &kp LCTRL>,
                 <&macro_tap>,
-                <&kp LEFT_WIN &kp LCTRL>,
-                <&macro_release>;
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_WIN &kp LCTRL>;
 
             label = "WORK";
         };
@@ -70,7 +77,7 @@
                 <&macro_press>,
                 <&kp LWIN &kp LCTRL>,
                 <&macro_tap>,
-                <&kp LEFT>,
+                <&kp RIGHT>,
                 <&macro_release>,
                 <&kp LWIN &kp LCTRL>;
 
@@ -116,7 +123,7 @@
 &kp ESC         &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                      &kp N6         &kp N7   &kp N8               &kp N9   &kp N0    &kp GRAVE
 &kp TAB         &kp Q   &kp W   &kp E     &kp R   &kp T                                       &kp Y          &kp U    &kp I                &kp O    &kp P     &kp MINUS
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F   &kp G                                       &kp H          &kp J    &kp K                &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z   &kp X   &kp C     &kp V   &kp B           &Paste         &to 0        &kp N          &kp M    &kp COMMA            &kp DOT  &kp FSLH  &kp RSHFT
+&kp LCTRL       &kp Z   &kp X   &kp C     &kp V   &kp B           &Paste         &kp CAPS     &kp N          &kp M    &kp COMMA            &kp DOT  &kp FSLH  &kp RSHFT
                                 &kp LALT  &copy   &Special_Paste  &lt 1 ENTER    &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &mt RCTRL RIGHT_WIN
             >;
 
@@ -136,7 +143,7 @@
 &kp F1    &kp F2    &kp F3         &kp F4       &kp F5  &kp F6                               &kp F7         &kp F8     &kp F9         &kp F10           &kp F11            &kp F12
 &tog 0    &tog 1    &tog 2         &tog 3       &tog 4  &kp PAGE_UP                          &kp PAGE_UP    &kp HOME   &kp UP         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
 &kp CAPS  &kp EXCL  &Work          &kp DOWN     &Home   &kp PAGE_DOWN                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
-&trans    &trans    &kp PAGE_DOWN  &kp PAGE_UP  &Paste  &Paste         &bt BT_CLR    &trans  &trans         &kp MINUS  &kp KP_PLUS    &kp EQUAL         &kp BACKSLASH      &trans
+&trans    &trans    &kp PAGE_DOWN  &kp PAGE_UP  &Paste  &SoundOption   &bt BT_CLR    &trans  &trans         &kp MINUS  &kp KP_PLUS    &kp EQUAL         &kp BACKSLASH      &trans
                                    &trans       &trans  &trans         &none         &trans  &trans         &trans     &kp RIGHT_WIN
             >;
 
