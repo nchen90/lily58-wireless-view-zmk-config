@@ -94,7 +94,7 @@
         Bluetooth: Bluetooth {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp K>;
+            bindings = <&kp RG(K)>;
             label = "BLUETOOTH";
         };
     };
