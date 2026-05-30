@@ -163,7 +163,7 @@
             bindings = <
 &kp F1    &kp F2        &kp F3         &kp F4       &kp F5        &kp F6                               &kp F7         &kp F8     &kp F9         &kp F10           &kp F11            &kp F12
 &tog 0    &tog 1        &tog 2         &tog 3       &tog 4        &kp PAGE_UP                          &kp PAGE_UP    &kp HOME   &kp UP         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
-&kp CAPS  &bt BT_SEL 0  &Work          &kp DOWN     &Home         &kp PAGE_DOWN                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
+&kp CAPS  &bt BT_SEL 1  &Work          &kp DOWN     &Home         &kp PAGE_DOWN                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
 &trans    &trans        &kp PAGE_DOWN  &kp PAGE_UP  &SoundOption  &Bluetooth     &bt BT_CLR    &trans  &trans         &kp MINUS  &kp KP_PLUS    &kp EQUAL         &kp BACKSLASH      &trans
                                        &Alt_F4      &trans        &trans         &none         &trans  &trans         &trans     &kp RIGHT_WIN
             >;
